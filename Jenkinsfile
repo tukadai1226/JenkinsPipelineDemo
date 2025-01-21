@@ -15,7 +15,6 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying'
-
                 withCredentials([[
                     $class: 'AmazonWebServicesCredentialsBinding',
                     credentialsId: 'MyAWS',
